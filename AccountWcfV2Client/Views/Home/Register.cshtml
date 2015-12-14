@@ -1,0 +1,73 @@
+﻿@model AccountWcfV2Client.Models.AccountInfo
+@{
+    ViewBag.Title = "Register";
+}
+
+<h3>@ViewBag.Title</h3>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <section>
+            @using (Html.BeginForm("Register", "Home", new { ReturnUrl = ViewBag.ReturnUrl },
+                FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.UserId, new { @class = "col-md-1 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.UserId, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.UserId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-1 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-1 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.FirstName, new { @class = "col-md-1 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.LastName, new { @class = "col-md-1 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-1 col-md-10">
+                        <input class="btn btn-default btn-primary col-md-10" type="submit" value="Register" />
+                    </div>
+                </div>
+
+                if (ViewBag.RegisterFailed != null)
+                {
+                    <p class="col-md-12 alert-danger text-danger" style="text-align:center;">@ViewBag.RegisterFailed</p>
+                }
+               
+            }
+        </section>
+    </div>
+
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

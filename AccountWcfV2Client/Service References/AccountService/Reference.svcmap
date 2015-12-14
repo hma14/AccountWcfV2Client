@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e5604130-43de-4e67-b1cb-243505505018" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://wcf.lottotry.com/AccountWcfV2/AccountWcfV2.AccountService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AccountWcfV2.xsd" MetadataType="Schema" ID="205dd6c2-4f94-4a9e-986a-11509bd977e5" SourceId="1" SourceUrl="http://wcf.lottotry.com/AccountWcfV2/AccountWcfV2.AccountService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AccountService.wsdl" MetadataType="Wsdl" ID="5a0f47f8-8832-427a-a912-3c43a6bc1f9c" SourceId="1" SourceUrl="http://wcf.lottotry.com/AccountWcfV2/AccountWcfV2.AccountService.svc?wsdl" />
+    <MetadataFile FileName="AccountWcfV21.xsd" MetadataType="Schema" ID="98f0db63-2bdf-4595-9ac7-53df15b9705d" SourceId="1" SourceUrl="http://wcf.lottotry.com/AccountWcfV2/AccountWcfV2.AccountService.svc?xsd=xsd3" />
+    <MetadataFile FileName="AccountWcfV22.xsd" MetadataType="Schema" ID="71032086-ea67-4f75-bfc1-947ca4220ac7" SourceId="1" SourceUrl="http://wcf.lottotry.com/AccountWcfV2/AccountWcfV2.AccountService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AccountWcfV2.disco" MetadataType="Disco" ID="833543a0-5a1b-418e-98d6-ca15723ee43b" SourceId="1" SourceUrl="http://wcf.lottotry.com/AccountWcfV2/AccountWcfV2.AccountService.svc?disco" />
+    <MetadataFile FileName="AccountWcfV23.xsd" MetadataType="Schema" ID="858a586b-d7e0-4de8-a413-a6bdc2fef714" SourceId="1" SourceUrl="http://wcf.lottotry.com/AccountWcfV2/AccountWcfV2.AccountService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

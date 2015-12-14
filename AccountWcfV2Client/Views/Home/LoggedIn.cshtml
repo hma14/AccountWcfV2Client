@@ -1,0 +1,10 @@
+﻿@using AccountWcfV2Client.AccountService
+@model AccountInfo
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <h3>Congratulation <span class="text-info"> @Model.lastname, @Model.firstname </span>! You have succefully logged in.</h3>
+    <br />
+    <p class="text-info">Now, you are eligible to register your car number to your account ...</p>
+</div>
